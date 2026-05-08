@@ -119,7 +119,7 @@ def main():
     if st.button("Analyze Passage", type="primary"):
         # Edge case: No API key
         if not api_key:
-            st.error("Please enter your Groq API key in the sidebar.")
+            st.error("Please make sure your API key is available in the .env file.")
             return
             
         # Edge case: Empty input
